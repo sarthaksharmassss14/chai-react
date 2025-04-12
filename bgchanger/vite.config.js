@@ -4,6 +4,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/chai-aur-react/bgchanger/',
+  base: '/bgchanger/',
+   build: {
+    outDir: '../docs'},
   plugins: [tailwindcss(),react()],
 })
